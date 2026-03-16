@@ -68,7 +68,7 @@ with st.sidebar:
     )
 
 
-DATA_DIR = "/Users/ravneetkaursaini/Desktop/Phython Projects/data"
+DATA_DIR = "data"
 
 
 
@@ -313,28 +313,7 @@ with col2:
     st.markdown("**LNKD Ratios**")
     st.line_chart(lnkd_ratios)
     
-# --- MSFT Ratios ---
-fig, ax = plt.subplots(figsize=(10,6))
-msft_ratios.plot(ax=ax, marker='o', linewidth=2)
-ax.set_title("Microsoft (MSFT) Historical Ratios Pre-Merger")
-ax.set_xlabel("Year")
-ax.set_ylabel("Ratio Value")
-ax.grid(True)
-plt.legend(title="Ratios")
-plt.tight_layout()
-
-# --- LinkedIn Ratios ---
-fig2, ax2 = plt.subplots(figsize=(10,6))
-lnkd_ratios.plot(ax=ax2, marker='o', linewidth=2, color=['red','green','blue','orange'])
-ax2.set_title("LinkedIn (LNKD) Historical Ratios Pre-Merger")
-ax2.set_xlabel("Year")
-ax2.set_ylabel("Ratio Value")
-ax2.grid(True)
-plt.legend(title="Ratios")
-plt.tight_layout()
-
-
-
+    
 # -----------------------
 # Interactive Timeline
 # -----------------------
